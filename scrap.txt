@@ -1,0 +1,71 @@
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+
+var name=document.myForm.name.value;  
+if (name==null || name==""){  
+    alert("Name can't be blank");  
+    return false;  
+  }
+
+if(!this.myForm.checkbox.checked)
+{
+    alert('You must agree to the terms first.');
+    return false;
+}
+
+
+var em = document.getElementById("email").value.indexOf("@gmail.com");
+if(em==-1) 
+{  
+alert("E-mail ID is not valid");
+return false;
+}
+
+
+const email = document.getElementById("email");
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I am expecting an e-mail address!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
+
+
+// let x = document.forms["myForm"]["name"].value;
+//   if (x == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   }
+
+
+
+if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+
+
+
+    if(!document.getElementById('Travel').checked){
+    alert('Checkbox not checked');
+    return false;
+}
+if(!document.getElementById('cook').checked){
+    alert('Checkbox not checked');
+    return false;
+}
+if(!document.getElementById('food').checked){
+    alert('Checkbox not checked');
+    return false;
+}

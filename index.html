@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>task 7</title>
+</head>
+<body>
+    <form action="#" method="GET" onsubmit="return myfun()" name="myForm">
+        <fieldset>
+        <legend>form</legend>
+            <label for="name">Name
+                <input type="text" name="na" id="name">
+            </label><br><br>
+            <label for="age">age
+                <input type="text" name="age" id="age">
+            </label><br><br>
+            <label for="Email">Email
+                <input type="text" name="email" id="email">
+            </label><br><br>
+            <label for="phone">Phone Number
+                <input type="text" name="phone" id="phone">
+            </label><br><br>
+            <label for="select">
+                city <br>
+                <select name="sel" id="sel">
+                    <option value="jaipur">jaipur</option>
+                    <option value="lucknow">Lucknow</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="noida">Noida</option>
+                </select>
+            </label><br><br>
+
+            <label for="hobbies">Hobbies <br>
+                <input type="checkbox" id="Travel" value="Bike">
+                <label for="Travel"> Travelling</label><br>
+                <input type="checkbox" id="cook" value="Car">
+                <label for="cook"> Cooking</label><br>
+                <input type="checkbox" id="foot" value="Boat">
+                <label for="foot"> Football</label><br>
+            </label><br><br>
+            <button type="submit" value="sub" name="sub">Click here to submit the form</button>
+        </fieldset>
+       
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
